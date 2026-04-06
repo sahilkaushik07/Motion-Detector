@@ -42,7 +42,8 @@ while cap.isOpened():
     frame1 = frame2
     ret, frame2 = cap.read()
 
-    if cv2.waitKey(40) == 27:  # Press ESC to exit
+    # CLose the window
+    if cv2.waitKey(40) == 27:
         break
 
 cap.release()
